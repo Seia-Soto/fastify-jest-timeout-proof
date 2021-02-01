@@ -14,6 +14,8 @@ This repository proofs that Jest will cause `RangeError: Maximum call stack size
 
 # Reproduction
 
+You can see the test results via [GitHub actions](https://github.com/Seia-Soto/fastify-jest-timeout-proof/runs/1803308741), or do it yourself.
+
 ```sh
 git clone https://github.com/Seia-Soto/fastify-jest-timeout-proof
 cd fastify-jest-timeout-proof
