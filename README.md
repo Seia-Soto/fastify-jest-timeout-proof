@@ -31,8 +31,8 @@ yarn test
 → C:\Users\seia\__tmp__\__seia\fs\layer\shares\template\tmp› yarn test
 yarn run v1.22.10
 $ jest
- PASS  tests/bundled.test.js    
- FAIL  tests/inlineAsync.test.js
+ PASS  tests/bundled.test.js       
+ FAIL  tests/beforeSync.test.js
   ● Test suite failed to run
 
     Maximum call stack size exceeded
@@ -47,8 +47,20 @@ $ jest
     Maximum call stack size exceeded
 
       RangeError: Maximum call stack size exceeded
-          at Object.deleteProperty (<anonymous>)
-          at Object.<anonymous> (LAYER_HIDDEN)
+
+ FAIL  tests/inlineAsync.test.js
+  ● Test suite failed to run
+
+    Maximum call stack size exceeded
+
+      RangeError: Maximum call stack size exceeded
+
+ FAIL  tests/manuals/manual.test.js
+  ● Test suite failed to run
+
+    Maximum call stack size exceeded
+
+      RangeError: Maximum call stack size exceeded
 
  FAIL  tests/beforeAsync.test.js
   ● Test suite failed to run
@@ -57,17 +69,10 @@ $ jest
 
       RangeError: Maximum call stack size exceeded
 
- FAIL  tests/beforeSync.test.js
-  ● Test suite failed to run
-
-    Maximum call stack size exceeded
-
-      RangeError: Maximum call stack size exceeded
-
-Test Suites: 4 failed, 1 passed, 5 total
+Test Suites: 5 failed, 1 passed, 6 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        20.591 s
+Time:        21.004 s
 Ran all test suites.
 error Command failed with exit code 1.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

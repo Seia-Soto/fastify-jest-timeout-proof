@@ -1,23 +1,16 @@
-const { syncScript } = require('../')
+import { syncScript } from '../../index.esm'
 
 describe('server', () => {
-  let app
-
-  beforeAll(() => {
-    app = syncScript()
-  })
-  afterAll(() => {
-    app.close()
-    app = null
-  })
-
-  it('should create new server', async () => {
+  it('should create new server object (manual, inline)', async () => {
     expect.assertions(1)
 
+    const app = syncScript()
     const response = await app.inject({
       method: 'POST',
       url: '/'
     })
+
+    app.close()
 
     expect(response.statusCode).toBe(404) // NOTE: Bad req;
   })

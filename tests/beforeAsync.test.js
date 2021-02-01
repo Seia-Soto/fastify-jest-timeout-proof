@@ -1,4 +1,4 @@
-const { asyncScript } = require('..')
+const { asyncScript } = require('../')
 
 describe('server', () => {
   let app

@@ -1,4 +1,4 @@
-const { syncScript } = require('..')
+const { syncScript } = require('../')
 
 describe('server', () => {
   it('should create new server object (inline)', async () => {
