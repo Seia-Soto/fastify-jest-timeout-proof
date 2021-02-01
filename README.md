@@ -1,4 +1,4 @@
-# Seia-Soto/fastify-jest-timeout-proof
+# Seia-Soto/fastify-jest-timeout-proof (actually depends on ESM module)
 
 This repository proofs that Jest will cause `RangeError: Maximum call stack size exceeded` when we run the test.
 
