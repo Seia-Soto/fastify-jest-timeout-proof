@@ -10,6 +10,10 @@ This repository proofs that Jest will cause `RangeError: Maximum call stack size
 
 # Disclaimer
 
+> **Issue already opened**
+>
+> https://github.com/standard-things/esm/issues/706, [link](https://github.com/standard-things/esm/issues/706)
+
 - I didn't care about ESlint things on this repository since current repository is only for reproduction.
 
 # Reproduction
