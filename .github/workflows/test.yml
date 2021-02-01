@@ -11,3 +11,12 @@ jobs:
       run: yarn
     - name: Test
       run: yarn test
+    - name: Test ESM as transform
+      run: |
+        echo Moving transformed test files
+        for file in transformedTests/*.sample.js; do mv $file "${file}.test.js"; done;
+
+        echo Moving jest config file
+        mv _jest.config.js jest.config.js
+        
+        yarn test
