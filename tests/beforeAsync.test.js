@@ -16,7 +16,7 @@ describe('server', () => {
     app = null
   })
 
-  it('should create new server (inline)', async () => {
+  it('should create new server', async () => {
     expect.assertions(1)
 
     const response = await app.inject({
